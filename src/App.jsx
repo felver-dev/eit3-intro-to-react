@@ -2,6 +2,7 @@ import "./app.css";
 // import Form from "./components/Form";
 import Map from "./components/Map";
 import MapWithEvent from "./components/MapWithEvent";
+import TooltipsDisplayer from "./components/Tooltips";
 import VectorLayer from "./components/VectorLayers";
 
 const App = () => {
@@ -11,7 +12,8 @@ const App = () => {
       {/* <Form /> */}
 
       {/* <MapWithEvent /> */}
-      <VectorLayer />
+      {/* <VectorLayer /> */}
+      <TooltipsDisplayer />
     </div>
   );
 };
