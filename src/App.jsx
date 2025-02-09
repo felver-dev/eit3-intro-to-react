@@ -2,6 +2,7 @@ import "./app.css";
 // import Form from "./components/Form";
 import Map from "./components/Map";
 import MapWithEvent from "./components/MapWithEvent";
+import VectorLayer from "./components/VectorLayers";
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
       {/* <Map /> */}
       {/* <Form /> */}
 
-      <MapWithEvent />
+      {/* <MapWithEvent /> */}
+      <VectorLayer />
     </div>
   );
 };

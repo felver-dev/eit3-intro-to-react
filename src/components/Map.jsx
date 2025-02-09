@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, Popup } from "react-leaflet";
+import CustomTileLayer from "./TileLayer";
 
 const Map = () => {
   const [DriverName, setDriverName] = useState("Jules");
@@ -10,10 +11,7 @@ const Map = () => {
       zoom={16}
       scrollWheelZoom={false}
     >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
+      <CustomTileLayer />
       <Marker position={[5.345317, -4.024429]}>
         <Popup>
           <span className="space-x-2">{DriverName} est à </span>
@@ -25,4 +23,3 @@ const Map = () => {
 };
 
 export default Map;
-
